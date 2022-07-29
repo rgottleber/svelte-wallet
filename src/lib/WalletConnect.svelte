@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { ethers } from 'ethers';
+	export let style = '';
 	export let web3Props = { provider: null, signer: null, account: null, chainId: null };
 	async function connectWallet() {
 		let provider = new ethers.providers.Web3Provider(window.ethereum, 'any');
@@ -12,5 +13,5 @@
 </script>
 
 {#if !web3Props.account}
-	<button on:click={connectWallet}>Attach Wallet</button>
+	<button {style} class="btn" on:click={connectWallet}>Attach Wallet</button>
 {/if}

@@ -1,6 +1,15 @@
 {
-	"name": "@rgottleber/wallet-connect",
-	"version": "0.0.6",
+	"name": "@rgottleber/svelte-wallet",
+	"version": "1.0.0",
+	"description": "A simple Svelte component for Connecting Web3 wallets",
+	"license": "MIT",
+	"repository": "rgottleber/svelte-wallet",
+	"keywords": [
+		"svelte",
+		"wallet",
+		"ethereum",
+		"web3"
+	],
 	"scripts": {
 		"dev": "svelte-kit dev",
 		"build": "svelte-kit build",
